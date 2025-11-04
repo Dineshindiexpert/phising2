@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../isntalogo.png">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fafafa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .main-container {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
+      padding: 100px;
+      background-color: white;
+      border: 1px solid #dbdbdb;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      
+    }
+
+    .left-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .right-container {
+      flex: 1;
+      max-width: 320px;
+      background: #fff;
+       
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .right-container img {
+      height: 50px;
+      margin-bottom: 15px;
+    }
+
+    h5 {
+      font-family: "Story Script", cursive;
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #262626;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+      background-color: #fafafa;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .login-btn {
+      background-color: #0095f6;
+      color: white;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background-color: #007ace;
+    }
+
+    .create-btn {
+      background-color: #f0f0f0;
+      color: #0095f6;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #00376b;
+      font-size: 13px;
+    }
+    form > a{
+        color:#1e90ff
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    .divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #8e8e8e;
+  margin: 20px 0;
+}
+.divider >span{
+    font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.divider:not(:empty)::before {
+  margin-right: 10px;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 10px;
+}
+span{
+    font-size: 18px;
+}
+
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .main-container {
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+      }
+
+      .left-container {
+        display: none;
+      }
+    }
+    .signup > a{
+        color: #4169e1 ;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="main-container">
+    <!-- Left Side (Optional image or phone mockup) -->
+    <div class="left-container">
+      <img src="../copyimage.png" alt="Instagram Preview">
+    </div>
+
+    <!-- Right Side (Login Form) -->
+    <div class="right-container">
+       
+       
+      <img src="../image of the instagram.png" alt="image ">
+
+      <form>
+        <input type="text" placeholder="Phone number ,username or email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="login-btn">Log In</button>
+        <br>
+        <br>
+        <p>or   </p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+          </svg>
+        <a href="#">login with facebook</a>
+      </form>
+
+      <br>
+      <div class="divider">
+        <span>OR</span>
+      </div>
+      <a href="#">Forgotten password?</a>
+      <br><br><br><br><br>
+      <p class="signup">Dont't have and account ? <a href="">sign up </a></p>
+      
+    </div>
+  </main>
+</body>
+</html>
